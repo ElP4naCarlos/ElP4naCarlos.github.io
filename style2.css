@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #090c31, #210931);
+    display: grid;
+    place-items: center;
+}
+
+
+.calculadora {
+    background-color: #15173c;
+    color: #fff;
+    width: 350px;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;   
+}
+
+.pantalla {
+    grid-column: 1/ -1;
+    background-color: #090c31;
+    padding: 25px;
+    font-size: 35px;
+    text-align: right;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-family: 'Pixelify Sans', sans-serif;
+    word-wrap: break-word;
+}
+
+.btn {
+    background-color: #15173c;
+    color: #fff;
+    border: 0;
+    padding: 25px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -3px #00000040;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #090c31;
+}
+
+#cero {
+    grid-column: span 2;
+
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #e6394a;
+}
+
+#igual:hover {
+    background-color: #e65766;
+}

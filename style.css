@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 80%;
+    font-size: 15px;
+    background-color: #15173c;
+    border-radius: 10px;
+}
+  
+  
+.logo img {
+    height: 70px;
+    box-shadow: 5px 5px 10px -3px #00000040;
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+}
+  
+img:hover{
+    transform: scale(1.1);
+}
+
+.texto {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold;
+    color: #e6394a;
+    text-shadow: 5px 5px 10px -3px #00000040;
+    transition: .2s;
+}
+
+.texto:hover {
+    color: #e65766;
+    transform: scale(0.9);
+}
